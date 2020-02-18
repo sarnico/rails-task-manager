@@ -1,11 +1,17 @@
-<h1>ca marche ???</h1>
-<ul>
+<h1>Your TO DO list</h1>
+<table>
   <% @tasks.each do |task| %>
-  <li>
-    <%= link_to "#{task.title}", task_path(task) %> <%= link_to "edit", edit_path(task)  %>  <%= link_to "delete", destroy_path(task), method: :delete %>
-  </li>
+<div class="tasks">
+    <p><%= task.completed ? "v" : "x" %></p>
+    <p><%= link_to "#{task.title}", task_path(task) %></p>
+    <p><%= task.details %></p>
+    <p><%= link_to "edit", edit_path(task) %></p>
+    <p><%= link_to "delete", destroy_path(task), method: :delete %></p>
+</div>
   <% end %>
-</ul>
-<%= link_to "create a new task", new_path  %>
+</table>
+
+<div class="btn"><%= link_to "create a new task", new_path  %></div>
+
 
 

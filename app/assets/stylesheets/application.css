@@ -13,3 +13,28 @@
  *= require_tree .
  *= require_self
  */
+.tasks {
+  display: flex;
+  width:80%;
+  justify-content: space-between;
+}
+
+p{
+  width:14%;
+  display: inline-block;
+  text-align: left;
+}
+.btn{
+  color: white;
+  background-color: grey;
+  padding: 20px 30px;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  opacity: 0.5
+}
+
+.btn :hover{
+  opacity:1;
+
+}
