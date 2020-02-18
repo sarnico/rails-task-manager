@@ -1,0 +1,6 @@
+      invoke  active_record
+   identical    db/migrate/20200218102956_create_tacks.rb
+   identical    app/models/tack.rb
+      invoke    test_unit
+   identical      test/models/tack_test.rb
+   identical      test/fixtures/tacks.yml
